@@ -55,8 +55,12 @@ document.addEventListener("DOMContentLoaded", function() {
  btn.onclick = (e) => {
    e.preventDefault();
     const ack = document.getElementById("ack");
-    ack.innerHTML = "<div class='notification is-primary is-light hide'><button class='delete'></button>Thank you. I will connect with you soon!</div>";
+ 
+    ack.innerHTML = "<div class='notification is-primary is-light hide'>Thank you. I will connect with you soon!</div>";
 
+    setTimeout(()=> {
+      ack.innerHTML = "";
+    }, 5000);
  }
 
 // document.addEventListener('DOMContentLoaded', () => {
@@ -65,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     $delete.addEventListener('click', () => {
       $notification.parentNode.removeChild($notification);
-      document.getElementById("ack").innerHTML = "";
+     
     });
   });
 //});
