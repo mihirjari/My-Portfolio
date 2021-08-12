@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
    e.preventDefault();
     const ack = document.getElementById("ack");
  
-    ack.innerHTML = "<div class='notification is-primary is-light hide'>Thank you. I will connect with you soon!</div>";
+    ack.innerHTML = "<div class='notification is-primary is-light'>Thank you.</div>";
 
     setTimeout(()=> {
       ack.innerHTML = "";
