@@ -56,11 +56,11 @@ document.addEventListener("DOMContentLoaded", function() {
    e.preventDefault();
     const ack = document.getElementById("ack");
  
-    ack.innerHTML = "<div class='notification is-primary is-light'>Thank you.</div>";
+    ack.innerHTML = "<div class='notification is-primary is-light'>Thank you for connecting.</div>";
 
     setTimeout(()=> {
       ack.innerHTML = "";
-    }, 5000);
+    }, 3000);
  }
 
 // document.addEventListener('DOMContentLoaded', () => {
