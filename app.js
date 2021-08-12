@@ -51,5 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
  }
 
  const handleSubmit = (e) => {
+   e.preventDefault();
    console.log(e);
  }
