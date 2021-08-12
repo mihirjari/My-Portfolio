@@ -53,5 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
  var btn = document.getElementById("btn");
  btn.onclick = (e) => {
-   console.log(e);
+   e.preventDefault();
+   
  }
