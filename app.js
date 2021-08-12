@@ -49,3 +49,9 @@ document.addEventListener("DOMContentLoaded", function() {
  const getResume = () => {
    location.href = "https://drive.google.com/file/d/19mv5kMeJYMUi5KJJ9xNyU9sJiWT236NI/view";
  }
+
+
+ var btn = document.getElementById("btn");
+ btn.onclick = (e) => {
+   console.log(e);
+ }
