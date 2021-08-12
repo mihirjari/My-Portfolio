@@ -54,5 +54,15 @@ document.addEventListener("DOMContentLoaded", function() {
  var btn = document.getElementById("btn");
  btn.onclick = (e) => {
    e.preventDefault();
-   
+
  }
+
+ document.addEventListener('DOMContentLoaded', () => {
+  (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+    const $notification = $delete.parentNode;
+
+    $delete.addEventListener('click', () => {
+      $notification.parentNode.removeChild($notification);
+    });
+  });
+});
