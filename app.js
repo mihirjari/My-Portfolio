@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     $delete.addEventListener('click', () => {
       $notification.parentNode.removeChild($notification);
+      document.getElementById("ack").innerHTML = "";
     });
   });
 });
