@@ -54,6 +54,8 @@ document.addEventListener("DOMContentLoaded", function() {
  var btn = document.getElementById("btn");
  btn.onclick = (e) => {
    e.preventDefault();
+    const ack = document.getElementById("ack");
+    ack.style.removeProperty('visibility');
 
  }
 
