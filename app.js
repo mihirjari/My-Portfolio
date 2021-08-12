@@ -55,11 +55,11 @@ document.addEventListener("DOMContentLoaded", function() {
  btn.onclick = (e) => {
    e.preventDefault();
     const ack = document.getElementById("ack");
-    ack.innerHTML = " <div class='notification is-primary is-light hide'><button class='delete'></button>Thank you. I will connect with you soon!</div>";
+    ack.innerHTML = "<div class='notification is-primary is-light hide'><button class='delete'></button>Thank you. I will connect with you soon!</div>";
 
  }
 
- document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => {
   (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
     const $notification = $delete.parentNode;
 
@@ -68,4 +68,4 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("ack").innerHTML = "";
     });
   });
-});
+//});
