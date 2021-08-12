@@ -49,3 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
  const getResume = () => {
    location.href = "https://drive.google.com/file/d/19mv5kMeJYMUi5KJJ9xNyU9sJiWT236NI/view";
  }
+
+ const handleSubmit = (e) => {
+   console.log(e);
+ }
