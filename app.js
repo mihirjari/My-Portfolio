@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
  btn.onclick = (e) => {
    e.preventDefault();
     const ack = document.getElementById("ack");
-    ack.style.removeProperty('visibility');
+    ack.innerHTML = " <div class='notification is-primary is-light hide'><button class='delete'></button>Thank you. I will connect with you soon!</div>";
 
  }
 
