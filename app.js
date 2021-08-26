@@ -55,33 +55,6 @@ document.addEventListener("DOMContentLoaded", function() {
  btn.onclick = (e) => {
 
   e.preventDefault();
-
-  //Firebase Code
-
-  const firebaseConfig = {
-    apiKey: "AIzaSyCgfiNDKqjWaQ3VoNeDbQ2-tsYN_0O6Wzk",
-    authDomain: "myportfolioform.firebaseapp.com",
-    projectId: "myportfolioform",
-    storageBucket: "myportfolioform.appspot.com",
-    messagingSenderId: "750668611103",
-    appId: "1:750668611103:web:5eb7db4a556efbc39f5f2a"
-  };
-
-  firebase.initializeApp(firebaseConfig);
-  var firestore = firebase.firestore();
-  const db = firestore.collection("formData");
-
-  const name = document.getElementById("Name").value;
-  const email = document.getElementById("Email").value;
-  const message = document.getElementById("Message").value;
-
-  db.doc().set({
-    name: name,
-    email: email,
-    message: message
-  }).then(() => {console.log("data saved")}).catch((error) => {console.log(error)})
-
-  //Firebase Code End
    
     const ack = document.getElementById("ack");
  
