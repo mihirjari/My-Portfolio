@@ -105,22 +105,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-/*
-
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyCgfiNDKqjWaQ3VoNeDbQ2-tsYN_0O6Wzk",
-  authDomain: "myportfolioform.firebaseapp.com",
-  projectId: "myportfolioform",
-  storageBucket: "myportfolioform.appspot.com",
-  messagingSenderId: "750668611103",
-  appId: "1:750668611103:web:5eb7db4a556efbc39f5f2a"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
- */
