@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 
   firebase.initializeApp(firebaseConfig);
-  var firestore = firebase.firestore();
+  var firestore = firebaseApp.firestore();
   const db = firestore.collection("formData");
 
   const name = document.getElementById("Name");
