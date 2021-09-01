@@ -5,7 +5,9 @@
   justify-content: center;
 }
 
-* {
+body {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -53,6 +55,9 @@ html {
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
 }
 
+.navbar-burger > span{
+  color: white;
+}
 
 @media (max-width: 599px) {
   .hero .hero-foot {

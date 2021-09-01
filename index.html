@@ -49,11 +49,7 @@
                     About Me
                   </a>
                 </div>
-                <div class="navbar-item">
-                  <a class="navbar-item" href="#services">
-                    Services
-                  </a>
-                </div>
+               
                 <div class="navbar-item">
                   <a class="navbar-item" href="#skills">
                     Skills
@@ -319,6 +315,7 @@
                       <input required
                         class="input"
                         type="text"
+                        id="name"
                         placeholder="John Doe"
                         name="Name"
                       />
@@ -334,6 +331,7 @@
                         class="input"
                         type="email"
                         placeholder="hello@yourname.com"
+                        id="email"
                         name="Email"
                       />
                       <span class="icon is-small is-left">
@@ -346,6 +344,7 @@
                     <div class="control">
                       <textarea required
                         class="textarea"
+                        id="message"
                         placeholder="Write your message here..."
                         name="Message"
                       ></textarea>
@@ -353,8 +352,8 @@
                   </div>
                   <div class="field">
                     <div class="control ">
-                      <button id="btn" class="button submit-button">
-                        Submit&nbsp;&nbsp;
+                      <button id="btn" class="button submit-button" onclick="sendMail()">
+                        Send&nbsp;&nbsp;
                         <i class="fas fa-paper-plane"></i>
                       </button>
                     </div>
@@ -400,6 +399,13 @@
           duration: 800,
         });
       </script>
+
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+      <script type="text/javascript">
+      (function() {
+      emailjs.init("user_udbrYETEdQArEvBvAV5Bw");
+      })();
+      </script> 
 
 
 </body>

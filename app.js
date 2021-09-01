@@ -51,21 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
  }
 
 
- var btn = document.getElementById("btn");
- btn.onclick = (e) => {
-
-  e.preventDefault();
-   
-    const ack = document.getElementById("ack");
- 
-    ack.innerHTML = "<div class='notification is-primary is-light'>Thank you for connecting.</div>";
-
-    setTimeout(()=> {
-      ack.innerHTML = "";
-    }, 3000);
- }
-
-// document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
     const $notification = $delete.parentNode;
 
@@ -74,7 +60,26 @@ document.addEventListener("DOMContentLoaded", function() {
      
     });
   });
-//});
+});
 
 
+const sendMail = () => {
+
+  var newParams = {
+    from_name: document.getElementById("name").value,
+    message: document.getElementById("message").value
+  };
+
+  emailjs.send('service_artizyq', 'template_ffraocd', newParams).then((res) => {
+
+      const ack = document.getElementById("ack");
+  
+      ack.innerHTML = "<div class='notification is-primary is-light'>Thank you for connecting.</div>";
+
+      setTimeout(()=> {
+        ack.innerHTML = "";
+      }, 3000);
+  });
+
+}
 
