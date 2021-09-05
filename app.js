@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   
  const getResume = () => {
-   location.href = "https://drive.google.com/file/d/19mv5kMeJYMUi5KJJ9xNyU9sJiWT236NI/view";
+   location.href = "https://drive.google.com/file/d/1DhUIkVytR65YNfGgte9Bs7aPwXWoLXIx/view";
  }
 
 
