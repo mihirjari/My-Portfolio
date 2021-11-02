@@ -17,6 +17,7 @@ html {
   font-family: 'Poppins', Lato, Tahoma, sans-serif;
   width: 100%;
   min-height: 100%;
+  scroll-behavior: smooth;
 }
 
 .header-wrapper {
@@ -310,6 +311,7 @@ figcaption{
   border-radius: 50%;
   font-size: 2rem;
   box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
+  
 }
 
 #toTop a {
