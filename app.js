@@ -83,3 +83,14 @@ const sendMail = () => {
 
 }
 
+// Typewriting effect
+
+var line = document.getElementById("typewrite");
+
+var typewriter = new Typewriter(line, {
+
+  loop: true
+});
+
+typewriter.typeString("A Front-end Developer").pauseFor(3000).deleteChars(19).typeString("Back-end Developer").pauseFor(3000).deleteChars(18).typeString("Fullstack Developer").pauseFor(3000).start();
+
