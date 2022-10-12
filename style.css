@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
 }
 
+.subheading a {
+  color: #3c4172;
+}
+
 html {
   font-family: 'Poppins', Lato, Tahoma, sans-serif;
   width: 100%;
